@@ -8,12 +8,44 @@
 }
 
 main {
-  max-width: 1400px;
+  max-width: 1124px;
+}
+
+#logo-container {
+  max-width: 90%;
+  display: flex;
+  height: 130px;
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #f4e7b530;
+  overflow: auto;
+}
+
+#lg-backdrop-1 {
+  background-color: #000000d4;
+}
+
+.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
+  border-color: #f8ce4f;
 }
 
 #logo {
-  display: block;
-  max-width: 70%;
+  background-image: url('images/logo.png');
+  flex: 5;
+}
+
+.bunny {
+  background-image: url('images/bunny.gif');
+  flex: 1;
+}
+
+.centered-background {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 body {
@@ -24,7 +56,6 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: auto;
 }
 
 #lightgallery {
@@ -37,13 +68,28 @@ html, body {
 
 #lightgallery > a {
   display: block;
-  width: 300px;
-  max-width: 50%;
-  border-radius: 4px;
+  border-radius: 10px;
   overflow: hidden;
+  background-image: url('images/frame.gif');
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
-.grid-sizer { 
-  width: 300px; 
-  max-width: 50%;
+#lightgallery > a > img {
+  display: block;
+  border-radius: 10px;
+}
+
+.grid-sizer, #lightgallery > a { 
+  width: calc(50% - 10px);
+}
+
+@media only screen and (min-width: 600px) {
+  #logo-container {
+    max-width: 70%;
+  }
+  .grid-sizer, #lightgallery > a { 
+    width: calc(25% - 10px);
+  }
 }
