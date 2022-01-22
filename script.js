@@ -9,6 +9,7 @@ function initializeGallery() {
     plugins: [lgZoom, lgThumbnail],
     licenseKey: "your_license_key",
     speed: 500,
+    zoomFromOrigin: true,
   });
   const galleryInstance = [...instance.galleryItems];
   galleryInstance.splice(galleryInstance.length - 1, 1);
