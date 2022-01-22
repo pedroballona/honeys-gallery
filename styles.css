@@ -28,17 +28,18 @@ main {
   background-color: #000000d4;
 }
 
-.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:hover {
   border-color: #f8ce4f;
 }
 
 #logo {
-  background-image: url('images/logo.png');
+  background-image: url("images/logo.png");
   flex: 5;
 }
 
 .bunny {
-  background-image: url('images/bunny.gif');
+  background-image: url("images/bunny.gif");
   flex: 1;
 }
 
@@ -52,7 +53,8 @@ body {
   background-image: url(./images/background.png);
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -70,7 +72,7 @@ html, body {
   display: block;
   border-radius: 10px;
   overflow: hidden;
-  background-image: url('images/frame.gif');
+  background-image: url("images/frame.gif");
   padding: 8px;
   box-sizing: border-box;
   margin-bottom: 10px;
@@ -81,7 +83,8 @@ html, body {
   border-radius: 10px;
 }
 
-.grid-sizer, #lightgallery > a { 
+.grid-sizer,
+#lightgallery > a {
   width: calc(50% - 10px);
 }
 
@@ -89,7 +92,17 @@ html, body {
   #logo-container {
     max-width: 70%;
   }
-  .grid-sizer, #lightgallery > a { 
+  .grid-sizer,
+  #lightgallery > a {
     width: calc(25% - 10px);
   }
 }
+
+/**
+    transform: scale(1.2);
+    z-index: 99999;
+    border: 6
+px
+ solid;
+    border-color: white;
+**/

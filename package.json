@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -c-1"
+    "start": "http-server -c-1",
+    "build": "gulp build",
+    "start:prod": "http-server ./dist -c-1"
   },
   "author": "Pedro",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
     "http-server": "^14.1.0"
   },
   "dependencies": {
