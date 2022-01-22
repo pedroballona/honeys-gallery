@@ -10,5 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "http-server": "^14.1.0"
+  },
+  "dependencies": {
+    "lightgallery": "^2.3.0",
+    "masonry-layout": "^4.2.2"
   }
 }
