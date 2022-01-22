@@ -1,0 +1,28 @@
+:host {
+  --background-color: #;
+}
+
+
+main {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#logo {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-width: 70%;
+}
+
+body {
+  background-image: url(./images/background.png);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
