@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "lightgallery": "^2.3.0",
-    "masonry-layout": "^4.2.2"
+    "masonry-layout": "^4.2.2",
+    "rxjs": "^7.5.2"
   }
 }
