@@ -1,5 +1,6 @@
-const gulp = require("gulp");
-const gulpClean = require("gulp-clean");
+import imagemin from 'gulp-imagemin';
+import gulp from "gulp";
+import gulpClean from "gulp-clean";
 
 function copyRoot() {
   return gulp
@@ -10,6 +11,7 @@ function copyRoot() {
 function copyImages() {
   return gulp
     .src(["images/**/*"])
+    .pipe(imagemin())
     .pipe(gulp.dest("dist/images"));
 }
 
@@ -29,7 +31,7 @@ function clear() {
   return gulp.src("dist", { read: false, allowEmpty: true }).pipe(gulpClean());
 }
 
-exports.build = gulp.series([
+export const build = gulp.series([
   clear,
   gulp.parallel([copyRoot, copyLightGallery, copyMasonry, copyImages]),
 ]);
